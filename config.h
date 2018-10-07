@@ -6,7 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "DejaVuSansMono:pixelsize=16:antialias=true:autohint=true";
-static int borderpx = 2;
+static int borderpx = 14;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -82,33 +82,50 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
+#define base00 #e3efef
+#define base01 #c9dbdc
+#define base02 #b0c5c8
+#define base03 #98afb5
+#define base04 #8299a1
+#define base05 #6d828e
+#define base06 #5a6d7a
+#define base07 #485867
+#define base08 #b38686
+#define base09 #d8bba2
+#define base0A #aab386
+#define base0B #87b386
+#define base0C #86b3b3
+#define base0D #868cb3
+#define base0E #b386b2
+#define base0F #b39f9f
+
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"#404040",
-	"#7a4256",
-	"#58614f",
-	"#97814e",
-	"#424a64",
-	"#7d5066",
-	"#3c5a5d",
-	"#7b8695",
+	base00,
+	base08,
+	base0B,
+	base0A,
+	base0D,
+	base0E,
+	base0C,
+	base05,
 
 	/* 8 bright colors */
-	"#464646",
-	"#7a4956",
-	"#6d7762",
-	"#a38d56",
-	"#626c94",
-	"#7e4967",
-	"#548084",
-	"#94a1b3",
+	base03,
+	base08,
+	base0B,
+	base0A,
+	base0D,
+	base0E,
+	base0C,
+	base07,
 
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#919294",
-	"#1d1f21",
+	base05,
+	base00,
 };
 
 
