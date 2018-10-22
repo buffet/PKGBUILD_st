@@ -82,22 +82,22 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
-#define base00 "#e3efef"
-#define base01 "#c9dbdc"
-#define base02 "#b0c5c8"
-#define base03 "#98afb5"
-#define base04 "#8299a1"
-#define base05 "#6d828e"
-#define base06 "#5a6d7a"
-#define base07 "#485867"
-#define base08 "#b38686"
-#define base09 "#d8bba2"
-#define base0A "#aab386"
-#define base0B "#87b386"
-#define base0C "#86b3b3"
-#define base0D "#868cb3"
-#define base0E "#b386b2"
-#define base0F "#b39f9f"
+#define base00 "#fefbec"
+#define base01 "#e8e4cf"
+#define base02 "#a6a28c"
+#define base03 "#999580"
+#define base04 "#7d7a68"
+#define base05 "#6e6b5e"
+#define base06 "#292824"
+#define base07 "#20201d"
+#define base08 "#d73737"
+#define base09 "#b65611"
+#define base0A "#ae9513"
+#define base0B "#60ac39"
+#define base0C "#1fad83"
+#define base0D "#6684e1"
+#define base0E "#b854d4"
+#define base0F "#d43552"
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
@@ -113,12 +113,12 @@ static const char *colorname[] = {
 
 	/* 8 bright colors */
 	base03,
-	base08,
-	base0B,
-	base0A,
-	base0D,
-	base0E,
-	base0C,
+	base09,
+	base01,
+	base02,
+	base04,
+	base06,
+	base0F,
 	base07,
 
 	[255] = 0,
